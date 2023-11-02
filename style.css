@@ -1,0 +1,31 @@
+body {
+  background-color: #efb4b4;
+  color: #ab1917; /* Here my dear chatgpt tought me to have two elements in one sector (the  body) */
+}
+h1 {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+}
+h2 {
+  font-family: "the-seasons", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+img {
+  max-width: 100%;
+  height: 1000px;
+  float: left;
+  margin-top: -350px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
