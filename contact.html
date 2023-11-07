@@ -9,25 +9,35 @@
   </head>
   <body>
     <header>
-        <h1 class="text1">Design By MF</h1>
-        <nav>
-          <ul>
-            <a href="index.html">
-              <link>Home</li>
-            </a>
-            <a href="#">
-              <link>About MF</li>
-            </a>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <h2 class="align-center">Contact me</h2> <!--Trying to make h2 be centered-->
-        <div class="form-input">
-            <p>Your name*</p>
-            <p>E-mail*</p>
-            <p>Message</p>
-        </div>
-      </main>
+      <h1 class="text1">Design By MF</h1>
+      <nav>
+        <ul>
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li>About MF</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="align-center">Contact me</h2>
+      <!--Trying to make h2 be centered, Gpt showed me a way to make the forms be centered by giving them their own div. By placing each form element inside its own div, it's easier to control the layout and style of each element individually. Easier then to later on change the specific form element by using the class on that specific div class. The structure becomes better as well!!-->
+      <div class="form-input">
+        <label>Your name*</label>
+        <input type="text" />
+      </div>
+      <div class="form-input">
+        <label>E-mail*</label>
+        <input type="text" />
+      </div>
+      <div class="form-input">
+        <label>Message</label>
+        <textarea rows="4" cols="50"></textarea>
+        <!-- Help from gpt and w3shools with input fields-->
+      </div>
+      <footer>© Design By MF 2023</footer>
+    </main>
   </body>
 </html>
