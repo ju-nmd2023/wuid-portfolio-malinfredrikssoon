@@ -1,6 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: #efb4b4;
   color: #ab1917; /* Here my dear chatgpt tought me to have two elements in one sector (the  body) */
+}
+
+/*Header section*/
+
+ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  padding: 2rem;
+  background-color: #ab1917;
+  color: #efb4b4;
+  margin: 0%;
+  align-items: center; /* Aligns all the items on the same x-line */
+}
+a {
+  color: #efb4b4;
+}
+li {
+  margin-left: 3rem;
+}
+nav ul img {
+  width: 200px;
+  position: absolute;
+  padding: 1rem;
+  top: 0;
+  left: calc(
+    50% - 100px
+  ); /* Position asbolute takes the element out of the others, the left calc tells me the distance is 50% of the whole web and then we take half of that to make it go perfectly in the middle. Erik Sandqvist helped me with this. */
 }
 
 /*Font section*/
@@ -9,7 +42,7 @@ h1 {
   font-family: "the-seasons", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h2 {
   font-family: "the-seasons", sans-serif;
@@ -28,6 +61,10 @@ ul {
 
 /* Contact page */
 
+h1 {
+  padding-top: 3rem;
+}
+
 .align-center {
   text-align: center;
 }
@@ -37,18 +74,14 @@ ul {
   text-align: center;
 }
 
-/*Tutorial by w3schools*/
-
-/*Logo section*/
-
-img {
-  max-width: 100%;
-  height: 1000px;
-  float: left;
-  margin-top: -350px;
+/* Portfolio page */
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0; /* Lägg till mellanrum mellan bilderna om det behövs */
+  justify-items: center;
+  align-items: center;
 }
-
-.container {
-  display: flex;
-  flex-direction: row;
+.portfolio-image {
+  width: 75%;
 }
