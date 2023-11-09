@@ -59,6 +59,57 @@ ul {
   font-size: 1rem;
 }
 
+/* Footer */
+footer {
+  background-color: rgb(248, 244, 244);
+  padding: 2rem;
+  text-align: center;
+}
+/* Index */
+.logotype-class {
+  max-width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /*C Center image tutorial by w3schools */
+  padding-top: 3rem;
+  height: calc(
+    100vh - 179px
+  ); /* The vh stands for viewheight, we want it to be t 100 % minus header-height */
+}
+.portfolio-preview-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1296px;
+  margin: auto;
+}
+.white-container {
+  background-color: rgb(248, 244, 244);
+  padding: 6rem 0; /* y and x led */
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1296px;
+  margin: auto;
+  padding: 6rem 0;
+  gap: 3rem;
+}
+
+.info-container p {
+  /* This is going to change all the p's inside the container, it minimizes the tags etc, help from Erik */
+  width: 600px;
+}
+
+.box {
+  width: 400px;
+  height: 563px;
+  border: 1px solid black;
+}
+
 /* Contact page */
 
 h1 {
@@ -78,10 +129,19 @@ h1 {
 .portfolio-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0; /* Lägg till mellanrum mellan bilderna om det behövs */
   justify-items: center;
   align-items: center;
+  gap: 3rem;
+  max-width: 1296px; /*width of images plus  gap */
+  margin: auto;
 }
 .portfolio-image {
-  width: 75%;
+  max-width: 400px;
+  height: 100%;
+  filter: drop-shadow(
+    8px 8px 8px rgba(0, 0, 0, 0.125)
+  ); /* x, y and width led */
+}
+body.portfolio {
+  background-color: rgb(248, 244, 244);
 }
