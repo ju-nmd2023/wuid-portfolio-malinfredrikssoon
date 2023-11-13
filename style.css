@@ -104,10 +104,9 @@ footer {
   width: 600px;
 }
 
-.box {
+.mf-painting {
   width: 400px;
-  height: 563px;
-  border: 1px solid black;
+  height: 500px;
 }
 
 /* Contact page */
@@ -132,7 +131,7 @@ h1 {
   justify-items: center;
   align-items: center;
   gap: 3rem;
-  max-width: 1296px; /*width of images plus  gap */
+  max-width: 1296px; /* width of images plus  gap */
   margin: auto;
 }
 .portfolio-image {
@@ -144,4 +143,110 @@ h1 {
 }
 body.portfolio {
   background-color: rgb(248, 244, 244);
+}
+
+/* phone illustration */
+
+.phone-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+}
+
+.phone-container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.125));
+}
+
+.centered-paragraph {
+  text-align: center;
+}
+
+/* Media quaries */
+@media screen and (max-width: 1300px) {
+  .logo-container {
+    padding-bottom: 2rem;
+  }
+  .portfolio-preview-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    gap: 2rem;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .info-container {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: auto;
+    padding: 2rem;
+  }
+  .info-container p {
+    /* This is going to change all the p's inside the container, it minimizes the tags etc, help from Erik */
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  ul {
+    padding-top: 5rem;
+    justify-content: center;
+    gap: 2rem;
+  }
+  li {
+    padding: 0%;
+    margin-left: 0%;
+  }
+  .logotype-class {
+    max-width: 326px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .info-container {
+    display: grid;
+    width: fit-content;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: auto;
+  }
+  .white-container {
+    padding-bottom: 2rem;
+  }
+  .portfolio-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .mf-painting {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logotype-class {
+    max-width: auto;
+    height: calc(100vh - 300px);
+  }
 }
