@@ -70,7 +70,7 @@ footer {
   max-width: 40%;
   display: block;
   margin-left: auto;
-  margin-right: auto; /*C Center image tutorial by w3schools */
+  margin-right: auto; /* Center image tutorial by w3schools */
   padding-top: 3rem;
   height: calc(
     100vh - 179px
@@ -109,6 +109,10 @@ footer {
   height: 500px;
 }
 
+.animation-container {
+  position: relative;
+}
+
 /* Contact page */
 
 h1 {
@@ -122,6 +126,88 @@ h1 {
 .form-input {
   margin: 4rem 0;
   text-align: center;
+}
+
+.display-button {
+  display: flex;
+  width: 163px;
+  height: 42px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin: auto;
+
+  /* Typografi */
+  color: #fff;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 4px;
+
+  /* Övriga stilar (kan justeras efter behov) */
+  background-color: #bd9e84; /* Lägg till bakgrundsfärg */
+  border: none;
+  cursor: pointer; /* Visar att det är en klickbar knapp */
+}
+
+/* Om du vill lägga till en hover-effekt (för att göra den mer interaktiv) */
+.display-button:hover {
+  background-color: #584f4f; /* Ändra bakgrundsfärg vid hover */
+  color: #fff; /* Ändra textfärg vid hover */
+}
+
+/* styles.css */
+
+.svg-container {
+  cursor: pointer;
+  transition: fill 0.3s ease; /* Övergångseffekt för färgändringen */
+}
+
+/* Förändra färgen när du hovrar över SVG-knappen */
+.svg-container:hover .svg-button {
+  fill: #584f4f; /* Ange den färg du vill att den ska ändras till här */
+}
+
+/* Göm SVG */
+.hidden-svg {
+  display: none; /* Eller använd "visibility: hidden;" om du vill att det ska finnas i layouten men vara osynligt */
+}
+
+/* Animation in index */
+
+.animation-container {
+  position: relative;
+  width: 50%;
+}
+
+.frame1,
+.frame2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+.frame1 {
+  animation: frameAnimation 2s linear infinite;
+}
+
+.frame2 {
+  animation: frameAnimation 2s linear infinite 1s;
+}
+
+@keyframes frameAnimation {
+  /* Gpt helped me formulate the code */
+  0%,
+  100% {
+    opacity: 1; /* First picture */
+  }
+  30% {
+    opacity: 0; /* 2nd */
+  }
 }
 
 /* Portfolio page */

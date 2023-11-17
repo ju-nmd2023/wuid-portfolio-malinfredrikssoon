@@ -36,6 +36,40 @@
         <label>Message</label>
         <textarea rows="4" cols="50"></textarea>
         <!-- Help from gpt and w3shools with input fields-->
+        <div>
+        <button class="display-button">Send</button>
+        </div>
+        <!-- Här inkluderar du din andra SVG-knapp -->
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Göm SVG</title>
+          <link rel="stylesheet" href="styles.css"> <!-- Länka till din CSS-fil -->
+        </head>
+        <body>
+        
+          <!-- Här inkluderar du din SVG-knapp -->
+          <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none" class="svg-button">
+              <path d="M0.958984 0H64.959V64H0.958984V0Z" fill="#DECCBE"/>
+              <path d="M36.2695 23.1724L27.4419 31.9999L36.2695 40.8275" stroke="black" stroke-linecap="round"/>
+            </svg>
+          </div>
+        
+          <!-- Här inkluderar du din gömda SVG -->
+          <div class="hidden-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="svg-button">
+              <path d="M0 0H64V64H0V0Z" fill="#584F4F"/>
+              <path d="M35.3105 23.1724L26.4829 31.9999L35.3105 40.8275" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        
+        </body>
+        </html>
+        
+        </div>
       </div>
       <footer>© Design By MF 2023</footer>
     </main>
