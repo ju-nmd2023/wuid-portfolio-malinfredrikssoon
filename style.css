@@ -22,6 +22,7 @@ ul {
 }
 a {
   color: #efb4b4;
+  text-decoration: none;
 }
 li {
   margin-left: 3rem;
@@ -128,6 +129,7 @@ h1 {
   text-align: center;
 }
 
+/* DELETE THIS LATER!!! */
 .display-button {
   display: flex;
   width: 163px;
@@ -137,42 +139,37 @@ h1 {
   align-items: center;
   flex-shrink: 0;
   margin: auto;
+  background-color: #bd9e84;
+  border: none;
+  cursor: pointer; /* Clickable button */
 
-  /* Typografi */
+  /* Typography of buttons */
   color: #fff;
   text-align: center;
   font-family: "Cormorant Garamond", serif;
   font-size: 20px;
   line-height: normal;
   letter-spacing: 4px;
-
-  /* Övriga stilar (kan justeras efter behov) */
-  background-color: #bd9e84; /* Lägg till bakgrundsfärg */
-  border: none;
-  cursor: pointer; /* Visar att det är en klickbar knapp */
 }
 
-/* Om du vill lägga till en hover-effekt (för att göra den mer interaktiv) */
 .display-button:hover {
-  background-color: #584f4f; /* Ändra bakgrundsfärg vid hover */
-  color: #fff; /* Ändra textfärg vid hover */
+  background-color: #584f4f;
+  color: #fff;
 }
 
-/* styles.css */
+/* return button */
 
 .svg-container {
   cursor: pointer;
-  transition: fill 0.3s ease; /* Övergångseffekt för färgändringen */
+  transition: fill 0.3s ease; /* The transition */
 }
 
-/* Förändra färgen när du hovrar över SVG-knappen */
-.svg-container:hover .svg-button {
-  fill: #584f4f; /* Ange den färg du vill att den ska ändras till här */
+.svg-container:hover .box {
+  fill: #584f4f;
 }
 
-/* Göm SVG */
-.hidden-svg {
-  display: none; /* Eller använd "visibility: hidden;" om du vill att det ska finnas i layouten men vara osynligt */
+.svg-container:hover .arrow {
+  stroke: white; /* Makes the arriw go white when hovering */
 }
 
 /* Animation in index */
